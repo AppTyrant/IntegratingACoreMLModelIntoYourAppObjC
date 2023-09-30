@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="4lF-DG-UOZ">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Mars Habitat Price Predictor-->
+        <scene sceneID="wQ3-am-F6e">
+            <objects>
+                <viewController id="LfD-Lh-tjb" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="JQ2-3T-hJv"/>
+                        <viewControllerLayoutGuide type="bottom" id="oqB-dj-pQy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="wZo-wo-gmJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="718"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rr5-Db-jYp">
+                                <rect key="frame" x="0.0" y="37" width="375" height="160"/>
+                                <color key="backgroundColor" systemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="160" id="Vmd-5u-oKg"/>
+                                </constraints>
+                            </pickerView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BpL-Z4-rHS">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="38"/>
+                                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="38" id="OYR-rG-ilU"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Solar Panels" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HJh-4j-KEX">
+                                <rect key="frame" x="0.0" y="8" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greenhouses" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eua-gC-NQ7">
+                                <rect key="frame" x="125" y="8" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Acres" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ue3-t3-2TH">
+                                <rect key="frame" x="250" y="8" width="125" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tGg-yY-MCY">
+                                <rect key="frame" x="0.0" y="197" width="375" height="527"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$1,123,123.00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vPY-js-JRg">
+                                        <rect key="frame" x="0.0" y="55" width="375" height="49"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="49" id="UX4-Vf-xj6"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Predicted Price (millions)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sLj-IY-2KM">
+                                        <rect key="frame" x="0.0" y="16" width="375" height="38"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="38" id="beB-4D-ONJ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="sLj-IY-2KM" firstAttribute="leading" secondItem="tGg-yY-MCY" secondAttribute="leading" id="0Dl-Wl-bwu"/>
+                                    <constraint firstAttribute="trailing" secondItem="sLj-IY-2KM" secondAttribute="trailing" id="7UG-5a-BSQ"/>
+                                    <constraint firstAttribute="trailing" secondItem="vPY-js-JRg" secondAttribute="trailing" id="NXd-xd-d3G"/>
+                                    <constraint firstItem="vPY-js-JRg" firstAttribute="leading" secondItem="tGg-yY-MCY" secondAttribute="leading" id="cx2-9v-CWL"/>
+                                    <constraint firstItem="vPY-js-JRg" firstAttribute="top" secondItem="sLj-IY-2KM" secondAttribute="bottom" constant="1" id="hem-33-LCf"/>
+                                    <constraint firstItem="sLj-IY-2KM" firstAttribute="top" secondItem="tGg-yY-MCY" secondAttribute="top" constant="16" id="hpN-hS-37U"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ouX-Co-QKI"/>
+                        <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Rr5-Db-jYp" firstAttribute="leading" secondItem="wZo-wo-gmJ" secondAttribute="leading" id="042-a7-p5B"/>
+                            <constraint firstItem="Ue3-t3-2TH" firstAttribute="leading" secondItem="eua-gC-NQ7" secondAttribute="trailing" id="ECb-ru-eGe"/>
+                            <constraint firstItem="tGg-yY-MCY" firstAttribute="leading" secondItem="wZo-wo-gmJ" secondAttribute="leading" id="GoQ-Yh-c2j"/>
+                            <constraint firstItem="tGg-yY-MCY" firstAttribute="top" secondItem="Rr5-Db-jYp" secondAttribute="bottom" id="Gya-nf-FzC"/>
+                            <constraint firstItem="eua-gC-NQ7" firstAttribute="width" secondItem="Ue3-t3-2TH" secondAttribute="width" id="OKc-6q-Krt"/>
+                            <constraint firstItem="BpL-Z4-rHS" firstAttribute="top" secondItem="wZo-wo-gmJ" secondAttribute="top" id="PvX-4W-WbN"/>
+                            <constraint firstItem="tGg-yY-MCY" firstAttribute="bottom" secondItem="oqB-dj-pQy" secondAttribute="top" constant="40" id="Weh-Ws-goZ"/>
+                            <constraint firstItem="BpL-Z4-rHS" firstAttribute="leading" secondItem="wZo-wo-gmJ" secondAttribute="leading" id="Z8u-DR-JPF"/>
+                            <constraint firstItem="HJh-4j-KEX" firstAttribute="leading" secondItem="wZo-wo-gmJ" secondAttribute="leading" id="g8g-FT-eTY"/>
+                            <constraint firstAttribute="trailing" secondItem="BpL-Z4-rHS" secondAttribute="trailing" id="gvt-8e-5cd"/>
+                            <constraint firstAttribute="trailing" secondItem="Ue3-t3-2TH" secondAttribute="trailing" id="i0h-aY-HwG"/>
+                            <constraint firstAttribute="trailing" secondItem="tGg-yY-MCY" secondAttribute="trailing" id="nMy-BN-2fg"/>
+                            <constraint firstItem="Rr5-Db-jYp" firstAttribute="top" secondItem="eua-gC-NQ7" secondAttribute="bottom" constant="8" id="p4I-Sb-sV0"/>
+                            <constraint firstItem="HJh-4j-KEX" firstAttribute="top" secondItem="eua-gC-NQ7" secondAttribute="top" id="r7k-Z5-3bf"/>
+                            <constraint firstAttribute="trailing" secondItem="Rr5-Db-jYp" secondAttribute="trailing" id="toh-Sb-hws"/>
+                            <constraint firstItem="HJh-4j-KEX" firstAttribute="top" secondItem="wZo-wo-gmJ" secondAttribute="top" constant="8" id="v4g-wy-vto"/>
+                            <constraint firstItem="eua-gC-NQ7" firstAttribute="leading" secondItem="HJh-4j-KEX" secondAttribute="trailing" id="vXE-Sq-9VX"/>
+                            <constraint firstItem="eua-gC-NQ7" firstAttribute="top" secondItem="Ue3-t3-2TH" secondAttribute="top" id="xLD-Qw-lwg"/>
+                            <constraint firstItem="HJh-4j-KEX" firstAttribute="width" secondItem="eua-gC-NQ7" secondAttribute="width" id="xTv-gW-MGv"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Mars Habitat Price Predictor" id="qez-nU-y2s"/>
+                    <connections>
+                        <outlet property="pickerView" destination="Rr5-Db-jYp" id="XLV-6R-I4A"/>
+                        <outlet property="priceLabel" destination="vPY-js-JRg" id="xmz-JB-nwm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EqG-21-Gc5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="129.98500749625188"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QqU-qd-9m7">
+            <objects>
+                <navigationController id="4lF-DG-UOZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="GHe-51-ydu">
+                        <rect key="frame" x="0.0" y="50" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="LfD-Lh-tjb" kind="relationship" relationship="rootViewController" id="KAL-vR-FUp"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sig-V6-67g" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-647" y="130"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784310000001" green="0.81960784310000001" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
